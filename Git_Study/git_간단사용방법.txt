@@ -1,0 +1,45 @@
+git config --global user.name "your_name"
+git config --global user.email "your_email"
+git config --list
+
+git init 맨처음 프로젝트를 올릴 때
+git add . 깃 허브에 모든 파일을 추가하겠다.
+git status (필수는 아님) 상태를 알려줌
+git commit -m "first commit" 히스토리 이름으로 커밋
+git remote add origin 주소 연결고리 생성
+git remote                         -v 로 확인
+git push origin master           master branch 로 코드를 보낸다
+
+
+git add .
+git commit -m"second commit"
+git pull
+git push
+
+
+
+fork 시에 동기화가 필요할 경우 (main repo 작성 후 my repo 에 동기화 시키기)
+git remote add upstream https...  원하는 위치와 동기화
+git remote -v 연결 고리 확인
+git fetch upstream 최신 업데이트 내용을 가져옴
+git merge upstream/main upstream repo 의 main branch 로 부터 local main branch 로 merge 한다.
+git push origin main 이 과정 까지는 local 환경이므로 push 를 통해 remote repo 에 적용해주면 된다.
+
+
+
+자료 올리면 받기
+git pull origin master
+이후 부터는 git pull
+
+
+최초 업데이트
+git init
+git remote add origin https://....
+git pull origin master
+
+git add .
+git commit -m""
+git push -u origin master
+
+
+
